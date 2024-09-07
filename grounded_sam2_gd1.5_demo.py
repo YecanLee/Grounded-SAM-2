@@ -21,7 +21,9 @@ from sam2.sam2_image_predictor import SAM2ImagePredictor
 """
 Hyper parameters
 """
+# this should the API token for the Dino v1.5, there is an upper limit for the quota.
 API_TOKEN = "Your API token"
+# this should be the text prompt for segmentation, the backbone right now is bert-uncased-base, unfortunately we may not change it since it is pretrained and embedded in the model architecture # noqa
 TEXT_PROMPT = "car . building ."
 IMG_PATH = "notebooks/images/cars.jpg"
 SAM2_CHECKPOINT = "./checkpoints/sam2_hiera_large.pt"
